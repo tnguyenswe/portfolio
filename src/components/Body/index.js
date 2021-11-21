@@ -11,7 +11,7 @@ const Body = (props) => {
         <Grid sx={{ gridRowGap: '60px' }}>
             <Intro />
             <About />
-            <Experience />
+            <Experience colorMode={props.colorMode}/>
             <Skills />
             <Projects />
         </Grid>

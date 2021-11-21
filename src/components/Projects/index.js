@@ -4,7 +4,7 @@ import { Flex, Grid } from 'theme-ui';
 import LinkText from '../LinkText';
 import shortid from 'shortid';
 
-const ProjectList = [{ project: 'Misfits DeFi | Founding Software Engineer', website: 'https://tnguyenswe.github.io/Misfits-DeFi/', projectDescription: 'Agriculture cryptocurrency token project. Responsibilities included: developing landing page, writing technical white paper, researching other cryptocurrency token projects to develop standards for token economics, white paper, pitch deck, reaching out to pre-seed investors, marketing, and development of token.' },]
+const ProjectList = [{ project: 'Misfits DeFi | Founding Software Engineer', website: 'https://tnguyenswe.github.io/Misfits-DeFi/', projectDescription: 'Responsibilities included: developing landing page, writing technical white paper, researching other cryptocurrency token projects to develop standards for token economics, white paper, pitch deck, reaching out to pre-seed investors, marketing, and development of token.' },]
 
 const Projects = (props) => {
     return (
@@ -17,6 +17,9 @@ const Projects = (props) => {
                             <Flex key={shortid.generate()} sx={{flexDirection: 'column'}}>
                                 <LinkText href={data.website} sx={{ ':hover': { textDecoration: 'underline', cursor: 'pointer' }, color: (theme) => theme.colors.titleText, pb: '10px', fontSize: '18px', fontWeight: '700' }} >{data.project}</LinkText>
                                 <Headline sx={{ color: (theme) => theme.colors.secondaryText, lineHeight: '26px', maxWidth: '900px', fontSize: '18px', pb: '26px' }} scale="h6">
+                                    Agriculture cryptocurrency token project.
+                                </Headline>
+                                <Headline sx={{ color: (theme) => theme.colors.titleText, lineHeight: '26px', maxWidth: '900px', fontSize: '18px', pb: '26px' }} scale="h6">
                                     {data.projectDescription}
                                 </Headline>
                             </Flex>
