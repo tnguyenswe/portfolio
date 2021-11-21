@@ -2,6 +2,7 @@
 import Headline from '../Headline';
 import { Flex, Grid } from 'theme-ui';
 import LinkText from '../LinkText';
+import shortid from 'shortid';
 
 const Jobs = [{ company: 'Backblaze', website: 'https://www.backblaze.com/', position: 'Front End Engineering Intern, July 2021 - Present' },
 { company: 'VirtuaBroker', website: 'https://virtuabroker.com/', position: 'Front End Software Engineer, April 2021 - July 2021' },
@@ -15,12 +16,12 @@ const Experience = (props) => {
                 <Flex sx={{ flexDirection: 'column' }}>
                     {Jobs.map((data) => {
                         return (
-                            <>
+                            <Flex key={shortid.generate()} sx={{flexDirection: 'column'}}>
                                 <LinkText href={data.website} sx={{ ':hover': { textDecoration: 'underline', cursor: 'pointer' }, color: (theme) => theme.colors.titleText, pb: '10px', fontSize: '18px', fontWeight: '700' }} >{data.company}</LinkText>
                                 <Headline sx={{ color: (theme) => theme.colors.secondaryText, lineHeight: '26px', maxWidth: '900px', fontSize: '18px', pb: '26px' }} scale="h6">
                                     {data.position}
                                 </Headline>
-                            </>
+                            </Flex>
                         );
                     })}
                 </Flex>

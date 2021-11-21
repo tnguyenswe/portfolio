@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
 import Headline from '../Headline';
 import { Flex, Grid } from 'theme-ui';
+import shortid from 'shortid';
 
 const Skill = [{ section: 'Languages', skills: 'Java, Python, JavaScript, HTML/CSS, Golang' },
 { section: 'Libraries & Frameworks', skills: 'Flask, React, Material UI, Tailwind CSS, Styled Components, Theme UI' },
@@ -14,12 +15,12 @@ const Skills = (props) => {
                 <Flex sx={{ flexDirection: 'column' }}>
                     {Skill.map((data) => {
                         return (
-                            <>
+                            <Flex key={shortid.generate()} sx={{flexDirection: 'column'}}>
                                 <Headline sx={{color: (theme) => theme.colors.titleText, pb: '10px', fontSize: '18px', fontWeight: '700' }} >{data.section}</Headline>
                                 <Headline sx={{ color: (theme) => theme.colors.secondaryText, lineHeight: '26px', maxWidth: '900px', fontSize: '18px', pb: '26px' }} scale="h6">
                                     {data.skills}
                                 </Headline>
-                            </>
+                            </Flex>
                         );
                     })}
                 </Flex>
