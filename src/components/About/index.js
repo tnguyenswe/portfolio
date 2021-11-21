@@ -1,7 +1,6 @@
 /** @jsxImportSource theme-ui */
-import LinkText from '../LinkText';
 import Headline from '../Headline';
-import { Flex, Grid, Image } from 'theme-ui';
+import { Flex, Grid } from 'theme-ui';
 
 const About = (props) => {
     return (

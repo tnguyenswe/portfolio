@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import Headline from '../Headline';
-import { Flex, Grid, Image } from 'theme-ui';
+import { Flex, Grid } from 'theme-ui';
 import LinkText from '../LinkText';
 
 const Jobs = [{ company: 'Backblaze', website: 'https://www.backblaze.com/', position: 'Front End Engineering Intern, July 2021 - Present' },

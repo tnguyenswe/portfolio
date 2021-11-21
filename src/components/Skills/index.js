@@ -1,7 +1,6 @@
 /** @jsxImportSource theme-ui */
 import Headline from '../Headline';
-import { Flex, Grid, Image } from 'theme-ui';
-import LinkText from '../LinkText';
+import { Flex, Grid } from 'theme-ui';
 
 const Skill = [{ section: 'Languages', skills: 'Java, Python, JavaScript, HTML/CSS, Golang' },
 { section: 'Libraries & Frameworks', skills: 'Flask, React, Material UI, Tailwind CSS, Styled Components, Theme UI' },

@@ -1,8 +1,7 @@
 /** @jsxImportSource theme-ui */
-import { Grid, Text } from "theme-ui";
+import { Grid } from "theme-ui";
 import { ReactComponent as SunIcon } from "../../assets/icons/sun.svg";
 import { ReactComponent as MoonIcon } from "../../assets/icons/moon.svg";
-import { useState } from "react";
 import React from "react";
 
 const NavBar = (props) => {

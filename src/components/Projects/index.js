@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import Headline from '../Headline';
-import { Flex, Grid, Image } from 'theme-ui';
+import { Flex, Grid } from 'theme-ui';
 import LinkText from '../LinkText';
 
 const ProjectList = [{ project: 'Misfits DeFi | Founding Software Engineer', website: 'https://tnguyenswe.github.io/Misfits-DeFi/', projectDescription: 'Agriculture cryptocurrency token project. Responsibilities included: developing landing page, writing technical white paper, researching other cryptocurrency token projects to develop standards for token economics, white paper, pitch deck, reaching out to pre-seed investors, marketing, and development of token.' },]
