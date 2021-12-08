@@ -6,12 +6,12 @@ import Experience from '../Experience';
 import Skills from '../Skills';
 import Projects from '../Projects';
 
-const Body = (props) => {
+const Body = () => {
     return (
         <Grid sx={{ gridRowGap: '60px' }}>
             <Intro />
             <About />
-            <Experience colorMode={props.colorMode}/>
+            <Experience/>
             <Skills />
             <Projects />
         </Grid>

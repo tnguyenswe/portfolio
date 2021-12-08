@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import Headline from '../Headline';
-import { Flex, Grid, Image, Link } from 'theme-ui';
+import { Flex, Grid, Image, Link, useThemeUI } from 'theme-ui';
 import LinkText from '../LinkText';
 import bbLogo from '../../assets/bb-logo.png';
 import vbImage from '../../assets/vb-image.png';
@@ -28,7 +28,10 @@ const CompanyText = (props) => {
     )
 }
 
-const Experience = (props) => {
+const Experience = () => {
+    const context = useThemeUI()
+    const { colorMode } = context
+
     return (
         <Flex sx={{ px: ['2rem', null, '6rem'], justifyContent: 'start' }}>
             <Grid sx={{ gridTemplateColumns: ['1fr', null, '160px 1fr'], gridColumnGap: '50px', justifyItems: ['start', null, 'start'], }}>
@@ -41,7 +44,7 @@ const Experience = (props) => {
                     <DescriptionText titleText>
                         Currently building amazing things at a recently IPO'd company 🚀
                     </DescriptionText>
-                    <Link href={Jobs[0]['website']} sx={{ backgroundColor: props.colorMode === "dark" ? "white" : '', maxWidth: '400px', borderRadius: '10px', mb: '25px' }}>
+                    <Link href={Jobs[0]['website']} sx={{ backgroundColor: colorMode === "dark" ? "white" : '', maxWidth: '400px', borderRadius: '10px', mb: '25px' }}>
                         <Image src={bbLogo} />
                     </Link>
 
@@ -55,7 +58,7 @@ const Experience = (props) => {
                         Worked on the front end of the VirtuaBroker production crypto trading platform
                     </DescriptionText>
                     <Link href={Jobs[1]['website']} sx={{ maxWidth: '500px', py: '20px', borderRadius: '10px', mb: '25px' }}>
-                        <Image src={vbImage} sx={{borderRadius: '10px'}}/>
+                        <Image src={vbImage} sx={{ borderRadius: '10px' }} />
                     </Link>
 
                     <CompanyText href={Jobs[2]['website']}>{Jobs[2]['company']}</CompanyText>

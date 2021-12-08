@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <NavBar toggleColorMode={toggleColorMode} colorMode={colorMode} />
-      <Body colorMode={colorMode}/>
+      <Body/>
     </>
   );
 }
