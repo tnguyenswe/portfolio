@@ -1,10 +1,8 @@
 /** @jsxImportSource theme-ui */
 import Headline from '../Headline';
-import { Flex, Grid, Image, Link, Box } from 'theme-ui';
+import { Flex, Grid, Image, Link } from 'theme-ui';
 import LinkText from '../LinkText';
-import shortid from 'shortid';
 import bbLogo from '../../assets/bb-logo.png';
-import vbLogo from '../../assets/vb-logo.png';
 import vbImage from '../../assets/vb-image.png';
 
 const Jobs = [{ company: 'Backblaze', website: 'https://www.backblaze.com/', position: 'Front End Software Engineer - Intern, July 2021 - Present' },
@@ -43,7 +41,7 @@ const Experience = (props) => {
                     <DescriptionText titleText>
                         Currently building amazing things at a recently IPO'd company 🚀
                     </DescriptionText>
-                    <Link href={Jobs[0]['website']} sx={{ backgroundColor: props.colorMode == "dark" ? "white" : '', maxWidth: '400px', borderRadius: '10px', mb: '25px' }}>
+                    <Link href={Jobs[0]['website']} sx={{ backgroundColor: props.colorMode === "dark" ? "white" : '', maxWidth: '400px', borderRadius: '10px', mb: '25px' }}>
                         <Image src={bbLogo} />
                     </Link>
 
@@ -54,7 +52,7 @@ const Experience = (props) => {
                     {/* Need to add animation for loading bar */}
                     {/* <Box sx={{width: '200px', height: '10px', backgroundColor: 'blue'}}></Box> */}
                     <DescriptionText titleText>
-                        Worked on the front end of the VirtuaBroker production trading platform
+                        Worked on the front end of the VirtuaBroker production crypto trading platform
                     </DescriptionText>
                     <Link href={Jobs[1]['website']} sx={{ maxWidth: '500px', py: '20px', borderRadius: '10px', mb: '25px' }}>
                         <Image src={vbImage} sx={{borderRadius: '10px'}}/>
@@ -65,7 +63,7 @@ const Experience = (props) => {
                         {Jobs[2]['position']}
                     </DescriptionText>
                     <DescriptionText titleText>
-                        Worked on developing a database change detector using MongoDB and LDAP/AD server to automate infrastructure with Ansible
+                        Developed a full stack web application in PHP for visualizing a database and wrote a database change detector using MongoDB and LDAP/AD server to automate infrastructure with Ansible
                     </DescriptionText>
 
 

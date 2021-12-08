@@ -15,8 +15,8 @@ const About = (props) => {
                 <Flex sx={{ flexDirection: 'column' }}>
                     <BodyText>
                     I am currently a Software Engineer specializing in Front End Web Development.
-                    My past experiences are in a variety of different areas including databases,
-                    software infrastructure, and front end web development.
+                    I've been building visuals for the web my whole career and have worked with both
+                    small and large scale projects both in startups and a mid-sized company.
                     </BodyText>
                     <BodyText sx={{py: '20px'}}>
                     I am an aspiring engineer that continues to enjoy 
