@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fc25a126.chunk.css",
-    "main.js": "/portfolio/static/js/main.86131f20.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.86131f20.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.08630b97.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.08630b97.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.9b3a0ef3.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.9b3a0ef3.js.map",
     "static/js/2.8eb9c0f2.chunk.js": "/portfolio/static/js/2.8eb9c0f2.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/portfolio/index.html",
     "static/css/main.fc25a126.chunk.css.map": "/portfolio/static/css/main.fc25a126.chunk.css.map",
     "static/js/2.8eb9c0f2.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8eb9c0f2.chunk.js.LICENSE.txt",
-    "static/media/Resume.e3475b96.pdf": "/portfolio/static/media/Resume.e3475b96.pdf",
+    "static/media/Resume.928720f8.pdf": "/portfolio/static/media/Resume.928720f8.pdf",
     "static/media/bb-logo.7ab6a998.png": "/portfolio/static/media/bb-logo.7ab6a998.png",
     "static/media/moon.a82cae44.svg": "/portfolio/static/media/moon.a82cae44.svg",
     "static/media/pro_photo_of_me.36e39110.jpg": "/portfolio/static/media/pro_photo_of_me.36e39110.jpg",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.9b3a0ef3.js",
     "static/js/2.8eb9c0f2.chunk.js",
     "static/css/main.fc25a126.chunk.css",
-    "static/js/main.86131f20.chunk.js"
+    "static/js/main.08630b97.chunk.js"
   ]
 }
